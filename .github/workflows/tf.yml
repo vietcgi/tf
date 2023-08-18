@@ -172,7 +172,7 @@ jobs:
       - name: Terraform apply
         id: terraform_apply
         if: matrix.in['terraform'] == 'apply'
-        uses: dflook/terraform-apply@5430d6b38e3bfbda62eb96b11a85b08536688d49 # v1.36.1
+        uses: dflook/terraform-apply@7a56cfb68f437341062f41afca87c71fc5b4bd5f # v1.36.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
